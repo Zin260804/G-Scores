@@ -1,4 +1,4 @@
-# G-Scores: National High School Exam Scores Portal
+# G-Scores
 
 This is my submission for the Golden Owl Web Developer Intern Assignment. The project is built as a full-stack web application to manage and analyze high school exam scores for the year 2024.
 
@@ -12,7 +12,6 @@ This is my submission for the Golden Owl Web Developer Intern Assignment. The pr
   - `6 - 8 points`
   - `4 - 6 points`
   - `< 4 points`
-- ✅ Statistics chart for the above bands across all subjects.
 - ✅ Top 10 students for Block A (Math, Physics, Chemistry).
 
 ### ✨ Nice to Have
@@ -42,7 +41,7 @@ This is my submission for the Golden Owl Web Developer Intern Assignment. The pr
 
 ### Deployment
 - Docker & Docker Compose (Multi-stage builds for optimal image size)
-- Ready to deploy on platforms like **Render / Fly.io / Railway / DigitalOcean**
+- Ready to deploy on platforms like **Render / Railway **
 
 ---
 
@@ -72,14 +71,47 @@ This is my submission for the Golden Owl Web Developer Intern Assignment. The pr
 
 - Install [Docker](https://docs.docker.com/get-docker/)
 - Install [Git](https://git-scm.com/)
+- Java 21
+- Install Node.js (for frontend local)
+- Install Java 21 (for backend local)
+- Install MySQL 8+ (for backend local)
+- IntelliJ IDEA
 
 ### 2️⃣ Clone Project
 
 ```bash
-git clone https://github.com/yourusername/gscores.git
+git clone https://github.com/GoldenOwlAsia/webdev-intern-assignment-3.git
+```
 
-### 2️⃣ Clone Project
+### 3️⃣ Option 1 — Run with Docker 🐳
 
 ```bash
-git clone https://github.com/yourusername/gscores.git
-cd gscores
+cd G-Scores
+```
+```bash
+docker compose up --build
+```
+- MySQL will run on port 3366
+- Backend (Spring Boot) will run on http://localhost:8080
+- Frontend (React) will run on http://localhost:3000
+  
+### 4️⃣ Option 2 — Run Locally
+
+- If you run backend directly on your local machine or IntelliJ
+``` bash
+CREATE DATABASE thpt_scores CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
+- Import student.sql file directly if you want to import data faster without running Flyway or seeders:
+- Open the /backend folder in IntelliJ IDEA. Next, Run the BackendApplication.java main class
+- Open the /frontend folder in IntelliJ IDEA
+``` bash
+npm install
+npm run dev
+```
+### 5️⃣ Option 3 — Access Deployed Web 🌐
+
+The project is deployed and available online: [LinkWeb](https://git-scm.com/)
+
+## 🏷 Author
+
+- Your Name: Nguyen Huu Vinh 
