@@ -38,7 +38,7 @@ const navItems: NavItem[] = [
     ],
   },
   {
-    name: "Setiings",
+    name: "Settings",
     icon: <PlugInIcon />, path:"/settings"
   },
 ];
