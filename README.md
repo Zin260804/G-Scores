@@ -7,13 +7,21 @@ This is my submission for the Golden Owl Web Developer Intern Assignment. The pr
 ### ✅ Must Have
 - ✅ Parse raw data (`diem_thi_thpt_2024.csv`) and store into database using **Flyway Migration** & **Seeder**.
 - ✅ Search student scores by **Registration Number**.
+
+  ![Parse raw data](ui/search-scores.png)
+  
 - ✅ Generate reports with score bands:
   - `>= 8 points`
   - `6 - 8 points`
   - `4 - 6 points`
   - `< 4 points`
+
+  ![Parse raw data](ui/chart.png)
+  
 - ✅ Top 10 students for Block A (Math, Physics, Chemistry).
 
+  ![Parse raw data](ui/top10.png)
+  
 ### ✨ Nice to Have
 - ✅ Fully responsive design for desktop, tablet & mobile.
 - ✅ Fullstack project containerized with **Docker Compose**.
@@ -94,7 +102,9 @@ docker compose up --build
 - MySQL will run on port 3366
 - Backend (Spring Boot) will run on http://localhost:8080
 - Frontend (React) will run on http://localhost:3000
-  
+
+⚠️ **Note:** During the initial Docker startup, the backend will run database seeders to import a large dataset. This process might take some time. It's recommended to let it run for a few minutes and then restart the containers to speed up subsequent runs.
+
 ### 4️⃣ Option 2 — Run Locally
 
 - If you run backend directly on your local machine or IntelliJ
@@ -110,7 +120,7 @@ npm run dev
 ```
 ### 5️⃣ Option 3 — Access Deployed Web 🌐
 
-The project is deployed and available online: [LinkWeb](https://git-scm.com/)
+The project is deployed and available online: [LinkWeb](https://g-scores-web.netlify.app/)
 
 ## 🏷 Author
 
